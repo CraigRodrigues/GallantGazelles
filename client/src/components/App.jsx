@@ -19,10 +19,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class="ui four column grid">
 
-        <div className="ui container">
-          <div className="ui two column container">
+        <div className="row">
+          <div className="column">
             <h2 className="ui header">
               <i className="plug icon"></i>
               <div className="content">
