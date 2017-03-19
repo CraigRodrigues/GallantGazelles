@@ -2,8 +2,7 @@ import React from 'react';
 
 const Video = () => (
   <section>
-    <div>
-      <iframe src="https://player.vimeo.com/video/151002965" width="640" height="251" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div className="ui embed" data-source="vimeo" data-id="151002965" data-placeholder="/images/vimeo-example.jpg">
     </div>
   </section>
 )

@@ -9,7 +9,7 @@ import PitchButtons from './PitchButtons.jsx';
 import Discussion from './Discussion.jsx';
 
 const Pitch = () => (
-  <section>
+  <section className="ui container">
     <Video />
     <PitchThumbnails />
     <div className="pitch-profile">

@@ -1,19 +1,19 @@
 import React from 'react';
 
 const NavBar = (props) => (
-  <nav>
-    <div>
-      <span>Home </span>
-      <span>Start a Pitch </span>
-      <span>How it works </span>
-      <span>Companies </span>
-      <span>Sign in </span>
-      <span>Sign up </span>
+  <div className="ui secondary menu">
+    <div className="right menu">
+      <a className="active item">Home</a>
+      <a className="item">Star a Pitch</a>
+      <a className="item">How it works</a>
+      <div className="item">
+        <div className="ui icon input">
+          <input type="text" placeholder="Search..." />
+          <i className="search link icon"></i>
+        </div>
+      </div>
     </div>
-    <div>
-      <input type="text" name="search" placeholder="Search" />
-    </div>
-  </nav>
+  </div>
 )
 
 export default NavBar;

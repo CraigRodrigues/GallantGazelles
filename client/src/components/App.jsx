@@ -17,18 +17,26 @@ class App extends React.Component {
     }
   }
 
-  componentDidMount() {
-    axios.get(`http://localhost:8080/classes/videos`)
-         .then(response => console.log(response))
-         .catch(error => console.error(error));
-  }
-
   render() {
     return (
       <div>
-        Pitchme.io
-        <NavBar />
-        <Pitch />
+
+        <div className="ui container">
+          <div className="ui two column container">
+            <h2 className="ui header">
+              <i className="plug icon"></i>
+              <div className="content">
+                Pitchme.io
+              </div>
+            </h2>
+            <NavBar />
+          </div>
+        </div>
+
+        <div className="ui container">
+          <Pitch />
+        </div>
+
         <Footer />
       </div>
     )
