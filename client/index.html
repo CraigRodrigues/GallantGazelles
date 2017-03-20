@@ -10,37 +10,82 @@
     <title>Pitchme.io</title>
   </head>
   <body>
+    <script>
+      $( document ).ready(function() {
+        console.log('dammit');
+        $('.content.example .ui.embed').embed();
+      });
+    </script>
     <!-- <div id="app" /> -->
     <!-- <script src="dist/bundle.js" type="text/javascript"></script> -->
     <div class="ui container">
-      <div class="ui equal width celled grid">
-        <div class="column">
+
+      <!-- Top Bar -->
+      <div class="ui grid">
+        <div class="five wide column">
           <div class="ui basic segment">
             <h1>Pitchme.io</h1>
           </div>
         </div>
-        <div class="column middle aligned content">
+        <div class="eleven wide column middle aligned content">
           <div class="ui secondary menu">
-            <a class="active item">
-              Home
-            </a>
-            <a class="item">
-              How It Works
-            </a>
-            <a class="item">
-              Companies
-            </a>
-            <a class="item">
-              Sign Up
-            </a>
-            <a class="item">
-              Test
-            </a>
+            <div class="right menu">
+              <a class="active item">
+                Home
+              </a>
+              <a class="item">
+                How It Works
+              </a>
+              <a class="item">
+                Companies
+              </a>
+              <a class="item">
+                Sign In
+              </a>
+              <a class="item">
+                Sign Up
+              </a>
+              <div class="item">
+                <div class="ui icon input">
+                  <input type="text" placeholder="Search...">
+                  <i class="search link icon"></i>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Video -->
+      <div class="ui text container">
+        <div class="ui raised padded segment">
+          <div class="ui embed" data-source="youtube" data-id="O6Xo21L0ybE"></div>
+        </div>
+      </div>
+
+      <!-- Video Info -->
+      <div class="ui text container">
+        <div class="ui item">
+          <a class="ui tiny image">
+            <img src="https://ph-files.imgix.net/8a2b7acf-d24d-46f3-9060-723db65625a9?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=120&h=120&fit=crop&dpr=2">
+          </a>
+          <div class="content">
+            <a class="header">Cute Dog</a>
+            <div class="description">
+              <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
+              <p>Many people also have their own barometers for what makes a cute dog.</p>
+            </div>
+            <div class="extra">
+                <div class="ui label">Tech</div>
+                <div class="ui label"><i class="globe icon"></i>iPhone</div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+
+
     </div>
-
-
   </body>
 </html>
